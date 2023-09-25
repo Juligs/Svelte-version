@@ -1,0 +1,42 @@
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, em, img, q, small, 
+strong, sub, sup, b, i, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, figcaption, figure, footer, header, menu, nav, section, summary, time, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	text-rendering: optimizeLegibility;
+}
+article, aside, figcaption, figure, footer, header, menu, nav, section {display: block}
+nav ul {list-style: none}
+blockquote, q {
+	quotes: none;
+	&::before, &::after {
+		content: '';
+		content: none;
+	}
+}
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+hr {
+	display: block;
+	height: 1px;
+	width: 100%;
+	border: 0;
+	border-top: 1px solid #333;
+	margin: 32px 0;
+	padding: 0;
+}
+input, select {vertical-align: middle}

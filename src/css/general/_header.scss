@@ -1,0 +1,200 @@
+.header {
+    position: relative;
+    // min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: -1;
+
+    &__back {
+        top: 0px;
+        left: 0px;
+        // background-image: url('https://phantom-elmundo.unidadeditorial.es/069ad766267ed64f9f3dcc07249362d4/resize/990/f/webp/assets/multimedia/imagenes/2023/05/10/16837283796192.jpg');
+        //background-image: url('https://e00-lab-elmundo.uecdn.es/prevencion-suicidio/images/photos/FINAL_OK.jpg');
+        background-repeat: no-repeat;
+        //background-attachment: fixed;
+        position: fixed;
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+        background-size: contain;
+        background-position: center;
+        height: 100vh;
+        // min-height: 100vh;
+        width: 100%;
+        opacity: 0;
+        animation: back_opacity 3s normal forwards ease-in;
+        animation-delay: 1s;
+        z-index: -1;
+        transition: background-position 0.3s ease-in-out;
+    }
+
+
+    &__portada {
+        z-index: 9999;
+    }
+
+    &.scrolled {
+        &__back {
+            background-position: center -100px;
+            min-height: 110vh;
+        }
+    }
+
+    &__description {
+        font-family: $font-roboto-condensed;
+        position: absolute;
+        top: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.8rem;
+        color: $color-font1;
+        display: block;
+        z-index: 1;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+
+    &__logo {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        gap: 4px;
+        color: $color-font1;
+        z-index: 999;
+        font-weight: 700;
+
+        img {
+            width: 2vw;
+            height: 2vw;
+            min-width: 28px;
+            min-height: 28px;
+            height: 47px;
+            width: 15px;
+            transition: transform 0.3s linear;
+
+            path {
+                fill: $color-font1
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 5%;
+        left: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+        font-family: "Mundo", serif;
+        text-align: center;
+        z-index: 2;
+    }
+
+    &__middleContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    &__yourContent {
+        max-width: 800px;
+        width: 100%;
+    }
+
+
+    &__title {
+        padding-top: 60px;
+        font-family: $font-mundo;
+        display: flex;
+        font-size: 50px;
+        max-width: 900px;
+        font-weight: 600;
+        line-height: 1em;
+        color: #ffffff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+        text-transform: uppercase;
+        margin: 0 auto;
+
+
+    }
+
+    &__subtitle {
+        display: flex;
+        font-family: $font-mundo;
+        margin-top: 20px;
+        font-size: 30px;
+        font-weight: 500;
+        max-width: 700px;
+        color: #fffbfb;
+        text-align: center;
+        padding-left: 2px;
+        line-height: 120%;
+
+
+
+    }
+
+}
+
+@keyframes back_opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes title_left {
+    from {
+        //transform: translateX(-25%);
+        opacity: 0;
+    }
+
+    to {
+        //transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes back_left {
+    from {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(25%);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header {
+        &__back {
+            background-position-x: 30%;
+        }
+
+        &__title {
+            font-size: 51px;
+
+        }
+
+        &__subtitle {
+            font-size: 18px;
+        }
+
+    }
+
+}

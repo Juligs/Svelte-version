@@ -1,0 +1,21 @@
+body {
+    font-family: $font-mundo;
+    color: $color-font1;
+
+
+}
+
+img {
+    max-width: none;
+    width: 100%;
+    height: auto;
+}
+
+strong,
+b {
+    font-weight: 700
+}
+
+a {
+    text-decoration: none
+}

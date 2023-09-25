@@ -1,0 +1,20 @@
+.summary {
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 2px solid $color-link;
+    border-top: 2px solid $color-link;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    transform: translateY(50%);
+    opacity: 0;
+    transition: transform 0.5s linear, opacity 0.5s linear;
+    &--animated {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

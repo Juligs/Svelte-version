@@ -1,0 +1,95 @@
+.txt {
+    &--first {
+        margin-top: 32px;
+    }
+
+    @include content-text();
+
+    a {
+        font-weight: 700;
+        color: $color-link;
+        transition: opacity .6s;
+
+        &:hover {
+            opacity: .8
+        }
+
+        &::selection {
+            background-color: $color-link;
+            color: #fff;
+        }
+
+    }
+
+    &__title {
+        font-family: $font-mundo;
+        font-size: 40px;
+        line-height: 0.95em;
+        font-weight: 700;
+        margin-bottom: 10px;
+        max-width: 400px;
+    }
+
+    &__subtitle {
+        font-family: $font-mundo;
+        font-size: 20px;
+        line-height: 1.2em;
+        font-weight: 500;
+        margin-bottom: 20px;
+        max-width: 400px;
+    }
+
+    &__capital {
+        &::first-letter {
+            float: left;
+            font-size: 80px;
+            height: 60px;
+            margin-right: 8px;
+        }
+    }
+
+    &__presupuesto {
+        font-family: $font-mundo;
+        color: #fff;
+        padding-bottom: 10px;
+    }
+
+    &__enunciado {
+        color: #fff;
+    }
+
+    p {
+        font-weight: 400;
+        font-family: $font-mundo;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: #fff;
+    }
+
+}
+
+.w {
+    &--300 {
+        font-weight: 300;
+    }
+
+    &--400 {
+        font-weight: 400;
+    }
+
+    &--500 {
+        font-weight: 500;
+    }
+
+    &--600 {
+        font-weight: 600;
+    }
+
+    &--700 {
+        font-weight: 700;
+    }
+
+    &--800 {
+        font-weight: 800;
+    }
+}

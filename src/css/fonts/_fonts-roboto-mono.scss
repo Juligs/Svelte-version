@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Roboto_mono";
+    font-style: normal;
+    font-weight: 100;
+    src: url($fontsUrl + "Roboto_Mono/RobotoMono-Thin.woff2") format("woff2"), url($fontsUrl + "Roboto_Mono/RobotoMono-Thin.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto_mono";
+    font-style: normal;
+    font-weight: 200;
+    src: url($fontsUrl + "Roboto_Mono/RobotoMono-Light.woff2") format("woff2"), url($fontsUrl + "Roboto_Mono/RobotoMono-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto_mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url($fontsUrl + "Roboto_Mono/RobotoMono-Regular.woff2") format("woff2"), url($fontsUrl + "Roboto_Mono/RobotoMono-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto_mono";
+    font-style: normal;
+    font-weight: 900;
+    src: url($fontsUrl + "Roboto_Mono/RobotoMono-Bold.woff2") format("woff2"), url($fontsUrl + "Roboto_Mono/RobotoMono-Bold.woff") format("woff");
+}

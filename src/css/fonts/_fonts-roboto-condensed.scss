@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Roboto_condensed";
+    font-style: normal;
+    font-weight: 100;
+    src: url($fontsUrl + "roboto/robotocondensed-light.woff2") format("woff2"), url($fontsUrl + "roboto/robotocondensed-light.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto_condensed";
+    font-style: normal;
+    font-weight: 400;
+    src: url($fontsUrl + "roboto/RobotoCondensed-Regular.woff2") format("woff2"), url($fontsUrl + "roboto/RobotoCondensed-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Roboto_condensed";
+    font-style: normal;
+    font-weight: 700;
+    src: url($fontsUrl + "roboto/RobotoCondensed-Bold.woff2") format("woff2"), url($fontsUrl + "roboto/RobotoCondensed-Bold.woff") format("woff");
+}

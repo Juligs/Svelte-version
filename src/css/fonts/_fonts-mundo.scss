@@ -1,0 +1,84 @@
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:300;
+    src:url($fontsUrl + "Mundo/Mundo-Light.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-Light.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:300;
+    src:url($fontsUrl + "Mundo/Mundo-LightItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-LightItalic.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:400;
+    src:url($fontsUrl + "Mundo/Mundo-Regular.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-Regular.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:400;
+    src:url($fontsUrl + "Mundo/Mundo-RegularItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-RegularItalic.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:500;
+    src:url($fontsUrl + "Mundo/Mundo-Medium.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-Medium.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:500;
+    src:url($fontsUrl + "Mundo/Mundo-MediumItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-MediumItalic.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:600;
+    src:url($fontsUrl + "Mundo/Mundo-SemiBold.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-SemiBold.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:600;
+    src:url($fontsUrl + "Mundo/Mundo-SemiBoldItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-SemiBoldItalic.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:700;
+    src:url($fontsUrl + "Mundo/Mundo-Bold.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-Bold.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:700;
+    src:url($fontsUrl + "Mundo/Mundo-BoldItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-BoldItalic.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:normal;
+    font-weight:800;
+    src:url($fontsUrl + "Mundo/Mundo-ExtraBold.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-ExtraBold.woff") format("woff");
+    font-display:swap
+}
+@font-face{
+    font-family:Mundo;
+    font-style:italic;
+    font-weight:800;
+    src:url($fontsUrl + "Mundo/Mundo-ExtraBoldItalic.woff2") format("woff2"),url($fontsUrl + "Mundo/Mundo-ExtraBoldItalic.woff") format("woff");
+    font-display:swap
+}

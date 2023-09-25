@@ -1,0 +1,194 @@
+.cont {
+    margin: 0px auto;
+    width: 100%;
+    box-sizing: border-box;
+
+
+    &--s {
+        max-width: 560px;
+    }
+
+    &--m {
+        max-width: 640px
+    }
+
+    &--l {
+        max-width: 767px
+    }
+
+    &--xl {
+        max-width: 972px
+    }
+
+    &--xxl {
+        max-width: 1200px
+    }
+
+    &--blue {
+        background-color: #Fb9a9a;
+        // mix-blend-mode: multiply;
+    }
+
+}
+
+.flex {
+    display: flex;
+
+    &--row {
+        flex-direction: row;
+    }
+
+    &--rowr {
+        flex-direction: row-reverse;
+    }
+
+    &--col {
+        flex-direction: column;
+    }
+
+    &--colr {
+        flex-direction: column-reverse;
+    }
+
+    &--astart {
+        align-items: flex-start;
+    }
+
+    &--acenter {
+        align-items: center;
+    }
+
+    &--aend {
+        align-items: flex-end;
+    }
+
+    &--jstart {
+        justify-content: flex-start;
+    }
+
+    &--jcenter {
+        justify-content: center;
+    }
+
+    &--jend {
+        justify-content: flex-end;
+    }
+
+    &--jbetween {
+        justify-content: space-between;
+    }
+
+    &--wrap {
+        flex-wrap: wrap;
+    }
+
+    &--gap4 {
+        gap: 4px
+    }
+
+    &--gap20 {
+        gap: 20px
+    }
+}
+
+.is {
+    &--rel {
+        position: relative;
+    }
+
+    &--abs {
+        position: absolute;
+    }
+}
+
+.pad {
+    &--t20 {
+        padding-top: 20px;
+    }
+
+    &--b20 {
+        padding-bottom: 20px;
+    }
+
+    &--t40 {
+        padding-top: 40px;
+    }
+
+    &--b40 {
+        padding-bottom: 40px;
+    }
+
+    &--t80 {
+        padding-top: 80px;
+    }
+
+    &--b80 {
+        padding-bottom: 80px;
+    }
+
+    &--t112 {
+        padding-top: 112px;
+    }
+
+    &--b112 {
+        padding-bottom: 112px;
+    }
+}
+
+.show {
+    &--mobile {
+        display: none;
+    }
+
+    &--desktop {
+        display: flex;
+    }
+}
+
+.overflow {
+    &--h {
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1004px) {
+    .cont {
+        &--xl {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .cont {
+        &--l {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        &--nopad {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .cont {
+        &--m {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .cont {
+        &--s {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+}

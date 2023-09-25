@@ -1,0 +1,48 @@
+  .social {
+      gap: 12px;
+
+      a {
+          width: 22px;
+          height: 22px;
+          line-height: 22px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid rgb(200, 235, 44);
+          border-radius: 50%;
+          transition: transform 0.2s linear, border 0.2s linear;
+
+          svg {
+              width: 22px;
+              height: 22px;
+
+              path {
+                  fill: rgb(255, 254, 254);
+              }
+          }
+
+          &:hover {
+              border: 1px solid rgb(134, 202, 247);
+              transform: scale(1.2);
+              transition: transform 0.2s linear, border 0.2s linear;
+
+              svg {
+                  path {
+                      fill: rgb(222, 143, 230);
+                      transition: transform 0.2s linear, border 0.2s linear;
+                  }
+              }
+          }
+      }
+
+
+
+  }
+
+  #social {
+      &__tw {
+          width: 16px;
+          height: 16px;
+      }
+  }

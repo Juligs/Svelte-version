@@ -1,0 +1,20 @@
+.photo {
+    &__caption {
+        font-size: 14px;
+        line-height: 1em;
+
+
+        cite {
+            font-style: normal;
+            padding-left: 4px;
+            margin-left: 4px;
+            border-left: 1px solid $color-font1;
+        }
+    }
+
+    &--mini {
+        margin: 0 auto;
+        width: 70%;
+        display: block;
+    }
+}

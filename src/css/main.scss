@@ -1,0 +1,62 @@
+/* FUENTES */
+$fontsUrl: 'https://e00.uecdn.es/fonts/';
+@import 'fonts/fonts-mundo'; //titulares y texto normal.
+@import 'fonts/fonts-roboto'; //leyenda / clave a 12px
+@import 'fonts/fonts-roboto-condensed'; //enunciados preguntas a 15px. preguntas bold, respuestas regular
+@import 'fonts/fonts-roboto-mono'; //titulares rollo ladillos (más excepcional)
+@import 'fonts/fonts-rubik'; //titulares tochos
+
+
+$font-mundo: 'Mundo', serif;
+$font-roboto: 'Roboto', sans-serif;
+$font-roboto-condensed: 'Roboto_condensed', sans-serif;
+$font-roboto-mono: 'Roboto_mono', sans-serif;
+$font-rubik: 'Rubik', serif; // 100, 400, 600, 900
+
+/* COLORES */
+$color-backg1: #fff;
+$color-font1: #000;
+$color-backg2: #222;
+$color-font2: #fff;
+
+$color-link: #c0223c;
+
+::selection {
+    background-color: #F5B5A2;
+    color: #000;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #191970
+}
+
+/* MIXINS, ES DECIR, LA BASE*/
+@import 'mixins'; //
+@import 'reset';
+@import 'base';
+@import 'layout';
+
+/* GENERALES INICIALES*/
+@import 'general/header';
+@import 'general/txt'; //texto, tamaño y demás
+@import 'general/date'; //fecha
+@import 'general/credits'; //en horizontal, columna...
+@import 'general/social';
+@import 'general/photo';
+
+/* GENERALES FINALES*/
+@import 'general/footer';
+
+/* COMPONENTS, ELIMINAR LAS IMPORTACIONES QUE NO SE USAN */
+
+//Ancho de cards en scrolly y estilos
+@import './components/scrolly';
+@import './components/summary';
+@import './components/video';
+@import './components/cards';
+@import './components/circle-container';

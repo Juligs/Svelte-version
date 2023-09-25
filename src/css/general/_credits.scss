@@ -1,0 +1,110 @@
+.credits {
+
+    position: relative;
+    align-items: center;
+
+    &__block {
+        display: flex;
+        justify-content: center;
+
+        max-width: 680px;
+
+        gap: 12px;
+        margin-top: 2px;
+
+        &:first-of-type {
+            margin-top: 0;
+        }
+    }
+
+    &__date {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: $font-roboto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    &__job {
+        font-size: 0.7rem;
+        height: 17px;
+        display: flex;
+        align-items: center;
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 10px;
+        font-weight: 600;
+        margin: 0 5px;
+    }
+
+    &__names {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        flex-wrap: wrap;
+        padding: 0 8px;
+
+
+
+    }
+
+    &__name {
+        font-size: 0.7rem;
+        font-family: $font-rubik;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: inline-block;
+
+        a {
+            position: relative;
+            vertical-align: bottom;
+            color: $color-font1;
+            transition: color 0.2s linear;
+            color: #ffffff;
+
+            svg {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+                width: 12px;
+                height: 12px;
+                margin-left: 4px;
+
+                path {
+                    transition: all 0.2s linear;
+                    fill: $color-font1
+                }
+            }
+
+            &:hover {
+                color: $color-link;
+                transition: color 0.2s linear;
+
+                svg {
+                    path {
+                        transition: all 0.2s linear;
+                        fill: $color-link
+                    }
+                }
+            }
+        }
+    }
+
+    &__line {
+        font-size: 0.7rem;
+        margin: 0 8px;
+        color: #cafd3f;
+    }
+
+    &__tw {
+        width: 16px;
+        height: 16px;
+    }
+}
