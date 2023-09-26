@@ -1,0 +1,43 @@
+module.exports = `
+<script language="JavaScript" type="text/javascript" data-ue-DataLayer>
+    var ueDataLayer=ueDataLayer||{};
+    ueDataLayer=ueDataLayer||{};
+    ueDataLayer.be_date_first_publication= new Date().getTime();
+    ueDataLayer.be_page_article_title="Proceso-descarbonizacion-espana";
+    ueDataLayer.be_page_newsID="";
+    ueDataLayer.be_page_characters="";
+    ueDataLayer.be_page_wordcounter="";
+    ueDataLayer.be_page_section="estudiar-fuera-casa";
+    ueDataLayer.be_page_subsection1="index";
+    ueDataLayer.be_page_subsection2="";
+    ueDataLayer.be_page_subsection3="";
+    ueDataLayer.be_page_subsection4="";
+    ueDataLayer.be_page_subsection5="";
+    ueDataLayer.be_page_subsection6="";
+    ueDataLayer.be_page_url="https://lab.elmundo.es/proceso-descarbonizacion-espana/index.html";
+    ueDataLayer.be_page_domain="elmundo.es";
+    ueDataLayer.be_page_subdomain="lab";
+    ueDataLayer.be_page_hierarchy="elmundo.es|lab|proceso-descarbonizacion-espana|index|||||";
+    ueDataLayer.be_text_seoTags="carbon|energia|eolica|nuclear";
+    ueDataLayer.be_page_site_version="web";
+    ueDataLayer.be_page_multimedia="graficos";
+    ueDataLayer.be_galleries_count="";
+    ueDataLayer.be_galleries_position="";
+    ueDataLayer.be_galleries_quantity="";
+    ueDataLayer.be_page_cms_template=" ";
+    ueDataLayer.be_page_content_type="otros";
+    ueDataLayer.be_navigation_type="origen";
+    ueDataLayer.be_scroll_type="";
+    ueDataLayer.be_text_journalist="Guillermo del Palacio | Elsa Millán | Juliana Suárez | Fernando Anido";
+    ueDataLayer.be_content_premium_detail="abierto";
+    ueDataLayer.be_content_premium="0";
+    ueDataLayer.be_product_section_conversion="";
+    ueDataLayer.be_product_subsection_conversion="";
+    ueDataLayer.be_product_title_conversion="";
+    ueDataLayer.be_content_signwall_detail="abierto";
+    ueDataLayer.be_content_signwall="0";
+    ueDataLayer.be_signwall_section_conversion="";
+    ueDataLayer.be_signwall_subsection_conversion="";
+    ueDataLayer.be_signwall_title_conversion="";
+</script>
+`;

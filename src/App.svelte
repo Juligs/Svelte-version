@@ -1,16 +1,21 @@
-
 <script>
-    
-import './css/global.css'
-import './css/main.scss'
-    let name = 'world';
- 
+  import { Router, Route } from "svelte-routing";
+  import './css/main.scss'
+  import Home from "./routes/Home.svelte";
+  import About from "./routes/About.svelte";
+  import Blog from "./routes/Blog.svelte";
 </script>
 
-<style>
-    h1{
-        color: tomato
-    }
-</style>
+<div>
+  <nav>
+    <a href="./">Home</a>
+    <a href="./about">About</a>
+    <a href="./blog">Blog</a>
+  </nav>
 
-<h1>Hello {name}!</h1>
+  <Router>
+    <Route path="./" component={Home} />
+    <Route path="./about" component={About} />
+    <Route path="./blog" component={Blog} />
+  </Router>
+</div>

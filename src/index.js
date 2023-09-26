@@ -7,7 +7,6 @@ const cssContext = require.context('./css', false, /\.css$/);
 cssContext.keys().forEach(cssContext);
 
 const app = new App({
-    target: document.getElementById('root'), // entry point in ../public/index.html
+    target: document.body,
 });
-
 export default app;

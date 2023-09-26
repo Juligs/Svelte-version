@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const Dotenv = require('dotenv-webpack');
-const webpack = require('webpack');
+
 
 module.exports = {
     // This says to webpack that we are in development mode and write the code in webpack file in different way
@@ -12,7 +12,7 @@ module.exports = {
     //Where we put the production code
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'index.js',
+        filename: ('js/index.js'),
         publicPath: '/',
     },
     module: {
@@ -48,7 +48,7 @@ module.exports = {
     //this is what enables users to leave off the extension when importing
     resolve: {
         extensions: ['.mjs', '.js', '.svelte'],
-        conditionNames: ['import', 'module', 'require', 'default'],
+        conditionNames: ['import', 'module', 'require', 'default', 'svelte'],
     },
     plugins: [
         //Allows to create an index.html in our build folder 
@@ -57,17 +57,11 @@ module.exports = {
         }),
         //This gets all our css and put in a unique file
         new MiniCssExtractPlugin({
-            filename: 'styles.css'
+            filename: 'css/styles.css'
         }),
-        //take our environment variable in .env file
-        //And it does a text replace in the resulting bundle for any instances of process.env.
+
         new Dotenv(),
-        new webpack.DefinePlugin({
-            'process.env': {
-                'NODE_ENV': JSON.stringify('development'),
-                'MY_CUSTOM_ENCODING': JSON.stringify('utf-8') // Establece la codificación UTF-8
-            }
-        })
+
     ],
     ////Config for webpack-dev-server module
     devServer: {
@@ -78,6 +72,5 @@ module.exports = {
         hot: true,
         compress: true,
         port: 8080,
-        open: 'chrome',
     },
 };
